@@ -1,0 +1,36 @@
+html, body {
+    width: 100%;
+    margin: 0;
+}
+
+.page-wrapper {
+    display: grid;
+    width: 100%;
+    background-color: cadetblue;
+    height: 100vh;
+    grid-template-columns: 12% 43% 33% 12%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas: 
+    " . navlogo navitems . "
+    " . welcometext welcomeimg . ";
+}
+
+.navlogo {
+    background-color: darkmagenta;
+    grid-area: navlogo;
+}
+
+.navitems {
+    background-color: chocolate;
+    grid-area: navitems;
+}
+
+.welcome-text {
+    background-color: darkolivegreen;
+    grid-area: welcometext;
+}
+
+.welcome-img {
+    background-color: darkred;
+    grid-area: welcomeimg;
+}
