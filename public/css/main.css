@@ -1,30 +1,37 @@
 html, body {
     width: 100%;
     margin: 0;
+    height: auto;
 }
 
 .page-wrapper {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 0% 15%;
+}
+
+.welcome {
+    width: 100%;
+    height: 100vh;
 }
 
 .navbar-nav {
     right: 0;
+    
 }
 
 .dropdown-item, .nav-link {
     font-family: 'Abril Fatface', cursive;
-    font-size: 1.87em;
+    font-size: 2.04em;
     color: #000;
 }
 
 .welcome-wrapper {
     display: grid;
-    padding-top: 10vh;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-template-areas: "wtext wimg";
-    grid-gap: 1rem;
+    grid-gap: 2rem;
+    margin-top: 15vh;
 }
 
 .welcome-text {
@@ -33,18 +40,20 @@ html, body {
 
 .welcome-text h1 {
     font-family: 'Bungee Shade', cursive;
+    color: #000;
     font-weight: 900;
-    font-size: 3.42em;
-    padding-top: 5vh;
+    font-size: 5.06em;
 }
 
 .welcome-text h3 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 1.87em;
+    font-size: 2.04em;
+    color: #000;
 }
 
 .welcome-img {
     grid-area: wimg;
+    padding-left: 5vh;
 }
 .welcome-img img {
     height: 40vh;
