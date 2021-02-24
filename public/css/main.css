@@ -5,6 +5,16 @@ html, body {
 
 .page-wrapper {
     width: 100%;
-    background-color: cadetblue;
     height: 100vh;
+    padding: 0% 15%;
+}
+
+.navbar-nav {
+    right: 0;
+}
+
+.dropdown-item, .nav-link {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.22em;
+    color: #000;
 }
