@@ -18,3 +18,17 @@ html, body {
     font-size: 1.22em;
     color: #000;
 }
+
+.welcome-text {
+    padding-top: 10vh;
+}
+
+.welcome-text h1 {
+    font-family: 'Bungee Shade', cursive;
+    font-weight: 900;
+    font-size: 3.42em;
+}
+
+.welcome-text h3 {
+    font-family: 'Abril Fatface', cursive;
+}
