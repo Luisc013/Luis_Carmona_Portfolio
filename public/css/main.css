@@ -15,20 +15,38 @@ html, body {
 
 .dropdown-item, .nav-link {
     font-family: 'Abril Fatface', cursive;
-    font-size: 1.22em;
+    font-size: 1.87em;
     color: #000;
 }
 
-.welcome-text {
+.welcome-wrapper {
+    display: grid;
     padding-top: 10vh;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-areas: "wtext wimg";
+    grid-gap: 1rem;
+}
+
+.welcome-text {
+    grid-area: wtext;
 }
 
 .welcome-text h1 {
     font-family: 'Bungee Shade', cursive;
     font-weight: 900;
     font-size: 3.42em;
+    padding-top: 5vh;
 }
 
 .welcome-text h3 {
     font-family: 'Abril Fatface', cursive;
+    font-size: 1.87em;
+}
+
+.welcome-img {
+    grid-area: wimg;
+}
+.welcome-img img {
+    height: 40vh;
+    border-radius: 50%;
 }
