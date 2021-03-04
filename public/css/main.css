@@ -20,6 +20,10 @@ h1, h2, h3, h4, p {
     padding: 0;
 }
 
+img {
+    width: 100%;
+}
+
 .navbar {
     display: flex;
     position: relative;
@@ -92,6 +96,16 @@ h1, h2, h3, h4, p {
     text-align: center;
     color: #fff;
 }
+
+.about-img {
+    height: 30vh;
+    width: 30vh;
+}
+
+.about-img img {
+    border-radius: 50%;
+}
+
 
 @media (max-width: 800px) {
     .navbar {
