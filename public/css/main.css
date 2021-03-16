@@ -9,10 +9,21 @@ body {
     padding: 0;
     font-family: 'Inria Sans', sans-serif;
 }
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
+
 .welcome-container {
     height: 100vh;
-    background-image: url("/public/images/portfolio-bg.jpg");
-    background-size: cover;
+    background: linear-gradient(
+  rgba(0,0,0,0.6),
+  rgba(0,0,0,0.6) ) ,
+  url("/public/images/portfolio-bg.jpg");
+  background-size: cover;
 }
 
 h1, h2, h3, h4, p {
@@ -50,7 +61,7 @@ img {
     text-decoration: none;
     color: #E0E0E0;
     padding: 1rem 1.97rem;
-    font-size: 1.28em;
+    font-size: 1.48em;
     font-weight: bold;
 }
 
@@ -83,6 +94,10 @@ img {
     padding: 0em;
 }
 
+.content {
+    scroll-behavior: smooth;
+}
+
 .content h1 {
     font-size: 5.02em;
     text-transform: uppercase;
@@ -98,15 +113,34 @@ img {
 }
 
 .btn {
-    background-color: #4363a0;
-    color: #fff;
+	display:inline-block;
+    position: absolute;
+	cursor:pointer;
     height: 55px;
     width: 200px;
-    border-radius: 15%;
+    left: 44%;
+    color: #fff;
+	padding:6px 24px;
+    margin-top: 20px;
+	border-radius:6px;
+	border:1px solid #c584f3;
+	background-color:#b69dfa;
+    box-shadow:inset 0px 1px 0px 0px #efdcfb;
+	text-shadow:0px 1px 0px #9752cc;
+	background:linear-gradient(to bottom, #b69dfa 5%, #956EFF 100%);
     font-size: 1.29em;
     font-family: 'Inria Sans', sans-serif;
-    left: 44%;
-    position: absolute;
+    font-weight: bold;
+	text-decoration:none;
+}
+
+.btn:hover {
+	background:linear-gradient(to bottom, #956EFF 5%, #b69dfa 100%);
+	background-color:#956EFF;
+}
+.btn:active {
+	position:relative;
+	top:1px;
 }
 
 .about-img {
